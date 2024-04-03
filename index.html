@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home:File Tracking System</title>
+    <!-- External Links Section -->
+    <link rel="stylesheet" href="Sass\index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- External Links Section-->
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <p>FTS</p>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="hide"><a href="addFile.html">Add File</a></li>
+                <li class="hide"><a href="updateFile.html">Update File</a></li>
+                <li><a href="trackFile.html">Track File</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="hide"><a href="login.html"><i class="fa-solid fa-user icon"></i> Login</a>
+                <li class="hide"><a href="#" class="USERNAME"><i class="fa-solid fa-user icon"></i> User Name</a>
+                    <ul>
+                        <li class="hide" id="logOut"><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="workStatus hide">
+            <p class="heroText">Work Status</p>
+            <div class="workbox">
+                <div class="pending">
+                    <p class="circle"></p>
+                    <p class="clickedPpending">Pending</p>
+                </div>
+                <div class="completed">
+                    <p class="circle"></p>
+                    <p class="clickedCompleted">Complete</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <p class="heroText">Track File</p>
+            <div class="fieldBtn">
+                <input type="text" id="trackFile" required>
+                <input type="button" value="TRACK" id="trackingBtn">
+            </div>
+        </div>
+    </section>
+<script type="module" src="./JavaScript/index.js"></script>
+</body>
+</html>
