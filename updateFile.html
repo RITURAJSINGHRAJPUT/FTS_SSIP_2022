@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update File : FTS</title>
+    <!-- External Links Start -->
+    <link rel="stylesheet" href="Sass\updateFile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- External Links End -->
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <p>FTS</p>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="hide"><a href="addFile.html">Add File</a></li>
+                <li class="hide"><a href="updateFile.html">Update File</a></li>
+                <li><a href="trackFile.html">Track File</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="hide"><a href="login.html"><i class="fa-solid fa-user icon"></i> Login</a>
+                <li class="hide"><a href="#" class="USERNAME"><i class="fa-solid fa-user icon"></i> User Name</a>
+                    <ul>
+                        <li class="hide" id="logOut"><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log
+                                Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+
+        <div class="content">
+            <p class="heroText">Search Your File</p>
+            <div class="fieldBtn">
+                <input type="text" id="trackFile" placeholder="Tracking id" required>
+                <input type="button" value="Find" id="fetchData">
+            </div>
+        </div>
+
+        <div class="ownerDetails">
+            <p class="text">Owner Details</p>
+
+            <label for="ownerName">Name
+                <input type="text" id="ownerName" placeholder="Owner Name" value="" required>
+            </label>
+
+            <label for="ownerNo">Mobile No
+                <input type="text" id="ownerNo" placeholder="Owner Mobile No" value="" required>
+            </label>
+
+            <label for="ownerEmail">Email
+                <input type="text" id="ownerEmail" placeholder="Owner Email" value="" required>
+            </label>
+        </div>
+
+        <div class="fileDetails">
+            <p class="text">File Detail</p>
+
+            <label for="subject">Subject
+                <input type="text" id="subject" placeholder="Subject" value="" required>
+            </label>
+
+            <label for="color">Color
+                <input type="text" id="color" placeholder="Colour" value="" required>
+            </label>
+
+            <label for="totalPages">Pages
+                <input type="text" id="totalPages" placeholder="Pages" value="" required>
+            </label>
+
+            <label for="description">Description
+                <input type="text" id="description" placeholder="Reason" value="" required>
+            </label>
+
+        </div>
+
+        <div class="updatedBy">
+            <p class="text">Updated By</p>
+
+            <div class="customSelect">
+                <label for="department">Department
+                    <select name="department" id="department">
+                        <option value="" disabled selected>--Select Department--</option>
+                        <option value="Account">Account</option>
+                        <option value="CNCD">CNCD</option>
+                        <option value="ICT">ICT</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Fire&Emergency">Fire&Emergency</option>
+                        <option value="Food Safety">Food Safety</option>
+                        <option value="Health">Health</option>
+                        <option value="Revenue">Revenue</option>
+                        <option value="Sanitation">Sanitation</option>
+                        <option value="Store Department">Store Department</option>
+                        <option value="Solid Waste Department">Solid Waste Department</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="customSelect">
+                <label for="subDepartment">Sub-Department
+                    <select id="subDepartment">
+                        <option value="" disabled selected>--Select Sub Department--</option>
+                        <option value="Account">Account</option>
+                        <option value="CNCD">CNCD</option>
+                        <option value="ICT">ICT</option>
+                        <option value="Civil">Civil</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Town Planning">Town Planning</option>
+                        <option value="Fire&Emergency">Fire&Emergency</option>
+                        <option value="Food Safety">Food & Safety</option>
+                        <option value="Mamta Seva Protsahak Yojna">Mamta Seva Protsahak Yojna</option>
+                        <option value="Birth And Dath Registration">Birth And Dath Registration</option>
+                        <option value="Marriage Registration">Marriage Registration</option>
+                        <option value="Mission Mangalam">Mission Mangalam</option>
+                        <option value="Professional Tax">Professional Tax</option>
+                        <option value="Property Tax">Property Tax</option>
+                        <option value="Vehicle Tax">Vehicle Tax</option>
+                        <option value="Notification">Notification</option>
+                        <option value="Store Department">Store Department</option>
+                        <option value="Solid Waste Department">Solid Waste Department</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="customSelect">
+                <label for="officerName">Officer Name
+                    <select id="officerName">
+                        <option value="" disabled selected>--Select Officer Name--</option>
+                        <option value="Employee 1">Employee 1</option>
+                        <option value="Employee 2">Employee 2</option>
+                        <option value="Employee 3">Employee 3</option>
+                        <option value="Employee 4">Employee 4</option>
+                        <option value="Employee 5">Employee 5</option>
+                        <option value="Employee 6">Employee 6</option>
+                        <option value="Employee 7">Employee 7</option>
+                        <option value="Employee 8">Employee 8</option>
+                        <option value="Employee 9">Employee 9</option>
+                        <option value="Employee 10">Employee 10</option>
+                        <option value="Employee 11">Employee 11</option>
+                        <option value="Employee 12">Employee 12</option>
+                        <option value="Employee 13">Employee 13</option>
+                        <option value="Employee 14">Employee 14</option>
+                        <option value="Employee 15">Employee 15</option>
+                        <option value="Manan">Manan</option>
+                        <option value="Sujal">Sujal</option>
+                        <option value="Meet">Meet</option>
+                        <option value="Aayush">Aayush</option>
+                        <option value="Rituraj">Rituraj</option>
+                    </select>
+                </label>
+            </div>
+
+            <label for="date">Date
+                <input type="text" id="date" placeholder="01/01/2023(Pre Field)" value="" required>
+            </label>
+
+            <label for="time">Time
+                <input type="text" id="time" placeholder="09:00 AM(Pre Field)" value="" required>
+            </label>
+
+            <div class="customSelect">
+                <label for="status">Status
+                    <select name="status" id="status">
+                        <option value="" disabled selected>--Select File Status--</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                </label>
+            </div>
+
+            <label for="reason" class="approved">Reason
+                <input type="text" id="reason" placeholder="if Pending/Declined">
+            </label>
+        </div>
+
+        <div class="forwardTo">
+            <p class="text">Forword To</p>
+
+            <div class="customSelect">
+                <label for="fwdDepartment" id="customLabel">Department
+                    <select id="fwdDepartment">
+                        <option value="" disabled selected>--Select Department--</option>
+                        <option value="Account">Account</option>
+                        <option value="CNCD">CNCD</option>
+                        <option value="ICT">ICT</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Fire&Emergency">Fire&Emergency</option>
+                        <option value="Food Safety">Food Safety</option>
+                        <option value="Health">Health</option>
+                        <option value="Revenue">Revenue</option>
+                        <option value="Sanitation">Sanitation</option>
+                        <option value="Store Department">Store Department</option>
+                        <option value="Solid Waste Department">Solid Waste Department</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="customSelect">
+                <label for="fwdSubDepartment">Sub-Department
+                    <select id="fwdSubDepartment">
+                        <option value="" disabled selected>--Select Sub Department--</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="customSelect">
+                <label for="fwdOfficerName">Officer Name
+                    <select id="fwdOfficerName">
+                        <option value="" disabled selected>--Select Officer Name--</option>
+                        <option value="Employee 1">Employee 1</option>
+                        <option value="Employee 2">Employee 2</option>
+                        <option value="Employee 3">Employee 3</option>
+                        <option value="Employee 4">Employee 4</option>
+                        <option value="Employee 5">Employee 5</option>
+                        <option value="Employee 6">Employee 6</option>
+                        <option value="Employee 7">Employee 7</option>
+                        <option value="Employee 8">Employee 8</option>
+                        <option value="Employee 9">Employee 9</option>
+                        <option value="Employee 10">Employee 10</option>
+                        <option value="Employee 11">Employee 11</option>
+                        <option value="Employee 12">Employee 12</option>
+                        <option value="Employee 13">Employee 13</option>
+                        <option value="Employee 14">Employee 14</option>
+                        <option value="Employee 15">Employee 15</option>
+                        <option value="Manan">Manan</option>
+                        <option value="Sujal">Sujal</option>
+                        <option value="Meet">Meet</option>
+                        <option value="Aayush">Aayush</option>
+                        <option value="Rituraj">Rituraj</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="customSelect">
+                <label for="fwdThrough">Forward Through
+                    <select id="fwdThrough">
+                        <option value="" disabled selected>--Select Department--</option>
+                        <option value="Peon 1">Peon 1</option>
+                        <option value="Peon 2">Peon 2</option>
+                        <option value="Peon 3">Peon 3</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="btn">
+            <input type="button" value="Update File" id="updateFileBtn">
+        </div>
+    </section>
+    <script type="module" src="./JavaScript/updateFile.js"></script>
+</body>
+
+</html>

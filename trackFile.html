@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track File : FTS</title> 
+    <!-- External Links Start -->
+    <link rel="stylesheet" href="Sass\trackFile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- External Links End -->
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>FTS</p>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="hide"><a href="addFile.html">Add File</a></li>
+                <li class="hide"><a href="updateFile.html">Update File</a></li>
+                <li><a href="trackFile.html">Track File</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="hide"><a href="login.html"><i class="fa-solid fa-user icon"></i> Login</a>
+                <li class="hide"><a href="#" class="USERNAME"><i class="fa-solid fa-user icon"></i> User Name</a>
+                    <ul>
+                        <li class="hide" id="logOut"><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="trackFile">
+            <p>TRACK YOUR FILE</p>
+            <input type="text" id="trackingId" placeholder="Tracking Id: FTS20231" required>
+            <input type="button" value="TRACK" id="trackBtn">
+        </div>
+        <div class="details">
+            <div class="fileDetail">
+                <p class="title">File Details</p>
+                <p id="description">Title  : </p>
+                <p id="color">Colour :</p>
+                <p id="totalPages">Pages  :</p>
+                <p id="Reason">Reason  :</p>
+            </div>
+            <div class="fileStatus">
+                <p class="title">File Status</p>
+                <p id="status">Status : </p>
+                <p id="department">Department : </p>
+                <p id="subDepartment">Sub Department : </p>
+                <p id="updatedBy">Updated By : </p>
+                <p id="date">Date Of Update :</p>
+                <p id="time">Time Of Update :</p>
+                <p id="reason">Reason : </p>
+            </div>
+            <div class="fileOwner">
+                <p class="title">Owner Detais</p>
+                <p id="ownerName">Name :</p>
+                <p id="ownerNo">Mobile No :</p>
+                <p id="ownerEmail">Email :</p>
+            </div>
+        </div>
+        <div class="direction">
+            <img src="Sass/Images/2.jpg">
+            <div class="line">
+                <label for="check1">
+                    <p id="time1"></p>
+                    <p id="status1"></p>
+                    <div class="shape">
+                        <input type="checkbox" class="circle" id="check1" >
+                    </div>
+                    <p id="date1"></p>
+                </label>
+                <label for="check2">
+                    <p id="time2"></p>
+                    <p id="status2"></p>
+                    <div class="shape">
+                        <input type="checkbox" class="circle" id="check2" >
+                    </div>
+                    <p id="date2"></p>
+                </label>
+                <label for="check3">
+                    <p id="time3"></p>
+                    <p id="status3"></p>
+                    <div class="shape">
+                        <input type="checkbox" class="circle" id="check3" >
+                    </div>
+                    <p id="date3"></p>
+                </label>
+                <label for="check4">
+                    <p id="time4"></p>
+                    <p id="status4"></p>
+                    <div class="shape">
+                        <input type="checkbox" class="circle" id="check4" >
+                    </div>
+                    <p id="date4">&nbsp;&nbsp;</p>
+                </label>
+            </div>
+        </div>
+    </section>
+<script type="module" src="./JavaScript/trackFile.js"></script>
+</body>
+</html>

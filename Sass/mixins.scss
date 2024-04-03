@@ -1,0 +1,31 @@
+@import "variable";
+
+@mixin button($height, $width)
+{
+    height: $height;
+    width: $width;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    color: $font-white;
+    background-color: $light-red;
+    transition: background-color 1s ease-in-out;
+
+}
+
+@mixin text($height, $width)
+{
+    height: $height;
+    width: $width;
+    outline: none;
+    border: 2px solid $font-grey;
+    border-radius: 5px;
+    background: transparent;
+    color: $font-black;
+    font-size: 16px;
+    font-weight: 600;
+}

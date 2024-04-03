@@ -1,0 +1,104 @@
+@import "variable";
+@import "header";
+@import "mixins";
+
+body {
+    background-image: url("Images/1.jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: top -10% left 0%;
+}
+.displaynone
+{
+    display: none;
+}
+section {
+    .workStatus {
+        margin: 5% 10% 0% 0%;
+        text-align: center;
+        float: right;
+        clear: both;
+
+        .heroText{
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            margin-right: 85px;
+            color: $sky-blue;
+        }
+
+        .workbox {
+            margin-top: 5px;
+            margin-right: 60px;
+            display: flex;
+            // color: $font-white;
+            
+            .circle
+            {
+                display: inline-block;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                background-color: $font-white;
+                border: 2px solid $font-white;
+                color: $yellow;
+                font-weight: 600;
+                font-size: 18px;
+
+            }
+            .pending {
+                padding: 20px 50px;
+                border: 2px solid $font-black;
+                margin: 0px 10px 0px 0px;
+                background-color: $yellow;
+                border-radius: 5px;
+                color: $font-white;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            }
+
+            .completed {
+                padding: 20px 50px;
+                border: 2px solid $font-black;
+                margin: 0px 10px 0px 0px;
+                background-color: $light-red;
+                border-radius: 5px;
+                color: $font-white;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                .circle
+                {
+                    color: $light-red;
+                }
+            }
+        }
+    }
+
+    .content {
+        margin: 8% 5% 0% 0%;
+        text-align: center;
+        float: right;
+        clear: both;
+
+        .heroText {
+            font-size: 40px;
+            text-align: center;
+            margin-right: 150px;
+        }
+
+        .fieldBtn {
+            margin-top: 5px;
+            margin-right: 100px;
+
+            input[type=text] {
+                @include text(40px, 400px)
+            }
+
+            input[type=button] {
+                margin: 0px 20px 0px -105px;
+                @include button(39px, 100px)
+            }
+        }
+    }
+}
+
+@import "footer";

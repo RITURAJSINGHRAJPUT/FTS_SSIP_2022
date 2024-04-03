@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  border-bottom: 3px solid #808080;
+}
+nav .logo {
+  font-size: 50px;
+  color: #E94A5C;
+  display: inline-block;
+  text-align: center;
+  padding: 2px 0px 0px 20px;
+}
+nav .navigation {
+  float: right;
+  margin: 0px 10px 0px 0px;
+  text-align: center;
+}
+nav .navigation ul li {
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5mm;
+  list-style-type: none;
+  padding: 22px 15px 0px 15px;
+}
+nav .navigation ul li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #E94A5C;
+  padding: 5px 0px;
+}
+nav .navigation ul li a:hover {
+  border-bottom: 3px solid #FDC749;
+  color: #000000;
+}
+nav .navigation ul li:hover > ul {
+  display: block;
+}
+nav .navigation ul ul {
+  display: none;
+}
+
+.displaynone {
+  display: none;
+}
+
+section .trackFile {
+  text-align: center;
+}
+section .trackFile p {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+section .trackFile input[type=text] {
+  margin-top: 10px;
+  height: 40px;
+  width: 400px;
+  outline: none;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  background: transparent;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+section .trackFile input[type=button] {
+  margin: 0px 20px 0px -105px;
+  height: 39px;
+  width: 100px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #E94A5C;
+  transition: background-color 1s ease-in-out;
+  height: 39px;
+  width: 100px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #E94A5C;
+  transition: background-color 1s ease-in-out;
+}
+section .details {
+  margin: 40px 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 80px;
+}
+section .details .title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+section .details .fileDetail {
+  min-width: 300px;
+  padding: 30px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+}
+section .details .fileStatus {
+  min-width: 300px;
+  padding: 30px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+}
+section .details .fileOwner {
+  min-width: 300px;
+  padding: 30px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+}
+section .direction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section .direction img {
+  height: 150px;
+  width: 150px;
+  margin: 0px 0px 0px 250px;
+}
+section .direction .line {
+  height: 20px;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: #00FF2b;
+  display: flex;
+  flex-direction: row;
+  transition: width 2s;
+}
+section .direction .line label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: -8px 70px 10px 70px;
+}
+section .direction .line label p {
+  text-align: center;
+}
+section .direction .line label .shape {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000000;
+  background-color: #00FF2b;
+  z-index: 10;
+  border-radius: 50%;
+}
+section .direction .line label .shape .circle {
+  visibility: hidden;
+}/*# sourceMappingURL=trackFile.css.map */

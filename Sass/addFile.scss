@@ -1,0 +1,89 @@
+@import "variable";
+@import "mixins";
+@import "header";
+
+body {
+    background-image: url('/Sass/Images/4.jpg');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: top 50% left 50%;
+}
+
+.displaynone {
+    display: none;
+}
+
+section {
+    margin: 50px 10px 10px 100px;
+    padding: 20px 250px;
+
+    .heroText {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 600;
+        color: $font-black;
+    }
+
+    .text {
+        font-size: 20px;
+        font-weight: 600;
+        color: $sky-blue;
+        margin: 15px 0px 5px 0px;
+    }
+
+    input[type=text] {
+        @include text(35px, 250px);
+        border: 2px solid $font-black;
+        padding: 10px;
+        margin-top: 5px;
+        font-weight: normal;
+    }
+
+    label {
+        display: inline-flex;
+        flex-direction: column;
+        margin: 10px 20px;
+        font-weight: 600;
+        color: $yellow;
+    }
+    
+    .customSelect {
+        display: inline;
+        position: relative;
+        top: 5px;
+        label
+        {
+            line-height: 30px;
+        }
+        select {
+            width: 250px;
+            height: 35px;
+            border: 2px solid $font-black;
+            border-radius: 5px;
+            background: transparent;
+            color: $font-black;
+            font-size: 16px;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        input[type=button] {
+            @include button(39px, 100px);
+            margin-top: 50px;
+
+        }
+    }
+
+    #description,#trackingId
+    {
+        @include text(35px, 840px);
+        border: 2px solid $font-black;
+        padding: 10px;
+        margin-top: 5px;
+        font-weight: normal;
+    }
+}

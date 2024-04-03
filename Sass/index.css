@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  border-bottom: 3px solid #808080;
+}
+nav .logo {
+  font-size: 50px;
+  color: #E94A5C;
+  display: inline-block;
+  text-align: center;
+  padding: 2px 0px 0px 20px;
+}
+nav .navigation {
+  float: right;
+  margin: 0px 10px 0px 0px;
+  text-align: center;
+}
+nav .navigation ul li {
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5mm;
+  list-style-type: none;
+  padding: 22px 15px 0px 15px;
+}
+nav .navigation ul li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #E94A5C;
+  padding: 5px 0px;
+}
+nav .navigation ul li a:hover {
+  border-bottom: 3px solid #FDC749;
+  color: #000000;
+}
+nav .navigation ul li:hover > ul {
+  display: block;
+}
+nav .navigation ul ul {
+  display: none;
+}
+
+body {
+  background-image: url("Images/1.jpg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: top -10% left 0%;
+}
+
+.displaynone {
+  display: none;
+}
+
+section .workStatus {
+  margin: 5% 10% 0% 0%;
+  text-align: center;
+  float: right;
+  clear: both;
+}
+section .workStatus .heroText {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 85px;
+  color: #0092FF;
+}
+section .workStatus .workbox {
+  margin-top: 5px;
+  margin-right: 60px;
+  display: flex;
+}
+section .workStatus .workbox .circle {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: #FDC749;
+  font-weight: 600;
+  font-size: 18px;
+}
+section .workStatus .workbox .pending {
+  padding: 20px 50px;
+  border: 2px solid #000000;
+  margin: 0px 10px 0px 0px;
+  background-color: #FDC749;
+  border-radius: 5px;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+section .workStatus .workbox .completed {
+  padding: 20px 50px;
+  border: 2px solid #000000;
+  margin: 0px 10px 0px 0px;
+  background-color: #E94A5C;
+  border-radius: 5px;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+section .workStatus .workbox .completed .circle {
+  color: #E94A5C;
+}
+section .content {
+  margin: 8% 5% 0% 0%;
+  text-align: center;
+  float: right;
+  clear: both;
+}
+section .content .heroText {
+  font-size: 40px;
+  text-align: center;
+  margin-right: 150px;
+}
+section .content .fieldBtn {
+  margin-top: 5px;
+  margin-right: 100px;
+}
+section .content .fieldBtn input[type=text] {
+  height: 40px;
+  width: 400px;
+  outline: none;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  background: transparent;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+section .content .fieldBtn input[type=button] {
+  margin: 0px 20px 0px -105px;
+  height: 39px;
+  width: 100px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #E94A5C;
+  transition: background-color 1s ease-in-out;
+}/*# sourceMappingURL=index.css.map */

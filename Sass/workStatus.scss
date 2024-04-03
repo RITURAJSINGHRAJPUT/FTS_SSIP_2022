@@ -1,0 +1,114 @@
+@import "variable";
+@import "mixins";
+@import "header";
+
+.displaynone
+{
+    display: none;
+}
+
+main {
+
+    margin-top: 55px;
+    .quickAccess {
+        margin: 0px 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 10px;
+
+
+        .heroText {
+            padding: 50px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .circle {
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: $font-white;
+            border: 2px solid $font-white;
+            color: $yellow;
+            font-weight: 600;
+            font-size: 18px;
+            text-align: center;
+
+
+        }
+
+        .pending {
+            text-align: center;
+            width: 100%;
+            height: 55px;
+            padding: 5px 5px;
+            border: 2px solid $font-black;
+            border-radius: 5px;
+            color: $font-white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: $yellow;
+            .circle
+            {
+                background-color: $yellow;
+                color: $font-white;
+            }
+        }
+
+
+        .completed {
+            text-align: center;
+            width: 100%;
+            padding: 5px 5px;
+            border: 2px solid $font-black;
+            border-radius: 5px;
+            color: $font-white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $font-white;
+            color: $light-red;
+
+            .circle {
+                background-color: $light-red;
+                color: $font-white;
+            }
+        }
+
+        .file {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 50px;
+            border: 2px solid $font-grey;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .id {
+                font-weight: 600;
+            }
+
+            .ownerName {
+                margin-left: 5px;
+                font-weight: 600;
+                color: $font-grey;
+            }
+
+            .updateBtn {
+                @include button(100%, 150px);
+                position: absolute;
+                right: 0;
+
+            }
+        }
+    }
+}

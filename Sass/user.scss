@@ -1,0 +1,51 @@
+@import "variable";
+@import "mixins";
+@import "header";
+
+body {
+    background-image: url("Images/5.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top -10% left 20%;
+}
+
+.displaynone {
+    display: none;
+}
+
+section {
+    margin-right: 200px;
+    margin-top: 200px;
+    float: right;
+
+    .logIn {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 45px;
+            color: $yellow;
+            font-weight: 600;
+        }
+
+        input[type=email],
+        input[type=password] {
+            margin-top: 20px;
+            @include text(40px, 250px);
+            border-radius: 5px;
+        }
+
+        a {
+            margin-top: 20px;
+        }
+
+        #loginBtn {
+            margin-top: 20px;
+            @include button(35px, 100px);
+        }
+
+    }
+}
+

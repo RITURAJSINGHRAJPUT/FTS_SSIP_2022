@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  border-bottom: 3px solid #808080;
+}
+nav .logo {
+  font-size: 50px;
+  color: #E94A5C;
+  display: inline-block;
+  text-align: center;
+  padding: 2px 0px 0px 20px;
+}
+nav .navigation {
+  float: right;
+  margin: 0px 10px 0px 0px;
+  text-align: center;
+}
+nav .navigation ul li {
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5mm;
+  list-style-type: none;
+  padding: 22px 15px 0px 15px;
+}
+nav .navigation ul li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #E94A5C;
+  padding: 5px 0px;
+}
+nav .navigation ul li a:hover {
+  border-bottom: 3px solid #FDC749;
+  color: #000000;
+}
+nav .navigation ul li:hover > ul {
+  display: block;
+}
+nav .navigation ul ul {
+  display: none;
+}
+
+body {
+  background-image: url("/Sass/Images/4.jpg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top 50% left 50%;
+}
+
+.displaynone {
+  display: none;
+}
+
+section {
+  margin: 0px 10px 10px 100px;
+  padding: 20px 250px;
+}
+section .content {
+  margin: 8% 0% 0% 0%;
+  text-align: center;
+}
+section .content .heroText {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 150px;
+}
+section .content .fieldBtn {
+  margin-top: 5px;
+  margin-right: 100px;
+}
+section .content .fieldBtn input[type=text] {
+  height: 40px;
+  width: 400px;
+  outline: none;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  background: transparent;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+section .content .fieldBtn input[type=button] {
+  margin: 0px 20px 0px -105px;
+  height: 39px;
+  width: 100px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #E94A5C;
+  transition: background-color 1s ease-in-out;
+}
+section .heroText {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #000000;
+}
+section .text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0092FF;
+  margin: 15px 0px 5px 0px;
+}
+section input[type=text] {
+  height: 35px;
+  width: 250px;
+  outline: none;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  background: transparent;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+section label {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  font-weight: 600;
+  color: #FDC749;
+  line-height: 20px;
+}
+section .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section .btn input[type=button] {
+  height: 39px;
+  width: 130px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #E94A5C;
+  transition: background-color 1s ease-in-out;
+  margin-top: 50px;
+}
+section #reason,
+section #description {
+  height: 35px;
+  width: 840px;
+  outline: none;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  background: transparent;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+section .customSelect {
+  display: inline;
+  position: relative;
+  top: 5px;
+}
+section .customSelect label {
+  line-height: 30px;
+}
+section .customSelect select {
+  width: 250px;
+  height: 35px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background: transparent;
+  color: #000000;
+  font-size: 16px;
+}/*# sourceMappingURL=updateFile.css.map */
